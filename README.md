@@ -42,5 +42,5 @@ microk8s join <TOKEN> --worker [Command from STEP 3] --> To connect worker node 
 ## STEP 5: Login back to Master instance created in STEP 1
 
 ```
-mkctl get nodes
+mkctl get nodes   or kubectl get nodes
 ```
