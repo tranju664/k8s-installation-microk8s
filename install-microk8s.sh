@@ -2,7 +2,7 @@
 
 echo "################################################################"
 echo "#                                                              #"
-echo "#                     ***Artisan Tek***                        #"
+echo "#                     ***SS-TRAINING***                        #"
 echo "#                   MicroK8S Installlation                     #"
 echo "#                                                              #"
 echo "################################################################"
@@ -20,6 +20,7 @@ echo "            -> Done"
 
 echo "     STEP 3: Creating Alias for mkctl"
 echo "alias mkctl='microk8s kubectl'" >> "$HOME/.bashrc"
+echo "alias kubectl='microk8s kubectl'" >> "$HOME/.bashrc"
 source "$HOME/.bashrc"
 echo "            -> Done"
 

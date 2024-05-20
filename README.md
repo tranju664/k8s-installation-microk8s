@@ -3,11 +3,11 @@
 ## STEP 1: MASTER NODE INSTALLATION
 
 - Create EC2 Instance from UBUNTU AMI with type t2.medium (2 core CPU and 4GB Ram)
-- Github URL: https://github.com/artisantek/kubernetes-installation-microk8s
+- Github URL: https://github.com/tranju664/k8s-installation-microk8s.git
 
 ### COMMANDS:
 ```
-git clone https://github.com/artisantek/kubernetes-installation-microk8s.git
+git clone https://github.com/tranju664/k8s-installation-microk8s.git
 cd kubernetes-installation-microk8s
 bash install-microk8s.sh
 ```
@@ -15,11 +15,11 @@ bash install-microk8s.sh
 ## STEP 2: Worker NODE INSTALLATION
 
 - Create EC2 Instance from UBUNTU AMI with type t2.micro (1 core CPU and 1GB Ram)
-- Github URL: https://github.com/artisantek/kubernetes-installation-microk8s
+- Github URL: https://github.com/tranju664/k8s-installation-microk8s.git
 
 ### COMMANDS:
 ```
-git clone https://github.com/artisantek/kubernetes-installation-microk8s.git
+git clone https://github.com/tranju664/k8s-installation-microk8s.git
 cd kubernetes-installation-microk8s
 bash install-microk8s.sh
 ```
