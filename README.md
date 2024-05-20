@@ -40,7 +40,7 @@ microk8s join <TOKEN> --worker [Command from STEP 3] --> To connect worker node 
 
 ```
 
-### Generate microk8s join command for worker node -2 in Master instance
+### Generate microk8s join command for worker node -2 in Master instance to have token, because it would b expired
 
 ```
 microk8s add-node
