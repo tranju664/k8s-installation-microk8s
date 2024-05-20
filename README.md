@@ -26,18 +26,31 @@ bash install-microk8s.sh
 
 ## STEP 3: Login back to Master instance created in STEP 1
 
-### Generate microk8s join command
+### Generate microk8s join command for worker node -1
 
 ```
 microk8s add-node
 ```
 >Note: Copy the command with --worker flag, we need to run this command on worker nodes
 
-## STEP 4: Initialize WORKER NODES [ssh to worker nodes created from STEP 2]
+## STEP 4: Initialize this step for  WORKER NODE -1 [ssh to worker nodes created from STEP 2]
 
 ```
 microk8s join <TOKEN> --worker [Command from STEP 3] --> To connect worker node to Master
+
 ```
+
+### Generate microk8s join command for worker node -2 in Master instance
+
+```
+microk8s add-node
+```
+>Note: Copy the command with --worker flag, we need to run this command on worker nodes
+
+## STEP 4: Initialize this step for  WORKER NODE -2 [ssh to worker nodes created from STEP 2]
+
+```
+microk8s join <TOKEN> --worker [Command from STEP 3] --> To connect worker node to Master
 
 ## STEP 5: Login back to Master instance created in STEP 1
 
