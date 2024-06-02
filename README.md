@@ -10,6 +10,21 @@
 git clone https://github.com/tranju664/k8s-installation-microk8s.git
 cd kubernetes-installation-microk8s
 bash install-microk8s.sh
+
+# Ensure MicroK8s is running
+microk8s status --wait-ready
+
+# Create .kube directory if it doesn't exist
+mkdir -p ~/.kube
+
+# Generate kubeconfig for MicroK8s
+sudo microk8s config > ~/.kube/config
+
+# Set correct permissions
+sudo chown -R $(whoami) ~/.kube
+
+# Verify configuration
+kubectl config view
 ```
 
 ## STEP 2: Worker NODE INSTALLATION
@@ -22,6 +37,22 @@ bash install-microk8s.sh
 git clone https://github.com/tranju664/k8s-installation-microk8s.git
 cd kubernetes-installation-microk8s
 bash install-microk8s.sh
+
+# Ensure MicroK8s is running
+microk8s status --wait-ready
+
+# Create .kube directory if it doesn't exist
+mkdir -p ~/.kube
+
+# Generate kubeconfig for MicroK8s
+sudo microk8s config > ~/.kube/config
+
+# Set correct permissions
+sudo chown -R $(whoami) ~/.kube
+
+# Verify configuration
+kubectl config view
+
 ```
 
 ## STEP 3: Login back to Master instance created in STEP 1
