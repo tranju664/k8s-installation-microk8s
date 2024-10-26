@@ -8,7 +8,7 @@
 ### COMMANDS:
 ```
 git clone https://github.com/tranju664/k8s-installation-microk8s.git
-cd kubernetes-installation-microk8s
+cd k8s-installation-microk8s
 bash install-microk8s.sh
 
 # Ensure MicroK8s is running
@@ -35,7 +35,7 @@ kubectl config view
 ### COMMANDS:
 ```
 git clone https://github.com/tranju664/k8s-installation-microk8s.git
-cd kubernetes-installation-microk8s
+cd k8s-installation-microk8s
 bash install-microk8s.sh
 
 # Ensure MicroK8s is running
