@@ -12,19 +12,19 @@ cd k8s-installation-microk8s
 bash install-microk8s.sh
 
 # Ensure MicroK8s is running
-microk8s status --wait-ready
+#microk8s status --wait-ready
 
 # Create .kube directory if it doesn't exist
-mkdir -p ~/.kube
+#mkdir -p ~/.kube
 
 # Generate kubeconfig for MicroK8s
-sudo microk8s config > ~/.kube/config
+#sudo microk8s config > ~/.kube/config
 
 # Set correct permissions
-sudo chown -R $(whoami) ~/.kube
+#sudo chown -R $(whoami) ~/.kube
 
 # Verify configuration
-kubectl config view
+#kubectl config view
 ```
 
 ## STEP 2: Worker NODE INSTALLATION
@@ -39,19 +39,19 @@ cd k8s-installation-microk8s
 bash install-microk8s.sh
 
 # Ensure MicroK8s is running
-microk8s status --wait-ready
+#microk8s status --wait-ready
 
 # Create .kube directory if it doesn't exist
-mkdir -p ~/.kube
+#mkdir -p ~/.kube
 
 # Generate kubeconfig for MicroK8s
-sudo microk8s config > ~/.kube/config
+#sudo microk8s config > ~/.kube/config
 
 # Set correct permissions
-sudo chown -R $(whoami) ~/.kube
+#sudo chown -R $(whoami) ~/.kube
 
 # Verify configuration
-kubectl config view
+#kubectl config view
 
 ```
 
