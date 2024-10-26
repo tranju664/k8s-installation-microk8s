@@ -25,6 +25,10 @@ bash install-microk8s.sh
 
 # Verify configuration
 #kubectl config view
+
+#microk8s status
+#microk8s start
+#microk8s stop
 ```
 
 ## STEP 2: Worker NODE INSTALLATION
