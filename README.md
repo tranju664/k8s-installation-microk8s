@@ -29,6 +29,10 @@ bash install-microk8s.sh
 #microk8s status
 #microk8s start
 #microk8s stop
+
+#To diconnect the node from master:
+#First, you need to access the node you want to disconnect.
+#microk8s leave
 ```
 
 ## STEP 2: Worker NODE INSTALLATION
