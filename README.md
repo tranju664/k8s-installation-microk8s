@@ -95,3 +95,11 @@ microk8s join <TOKEN> --worker [Command from STEP 3] --> To connect worker node 
 ```
 mkctl get nodes   or kubectl get nodes
 ```
+## To diconnect from node
+```
+microk8s leave
+```
+## To delete the worker nodes
+```
+kubectl delete node <worker-node-name>
+```
