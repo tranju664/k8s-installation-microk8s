@@ -21,7 +21,7 @@ echo "            -> Done"
 echo "     STEP 3: Creating Alias for mkctl"
 echo "alias mkctl='microk8s kubectl'" >> "$HOME/.bashrc"
 echo "alias kubectl='microk8s kubectl'" >> "$HOME/.bashrc"
-. "$HOME/.bashrc"
+source "$HOME/.bashrc"
 echo "            -> Done"
 
 echo "     STEP 4: Reloading Session"
